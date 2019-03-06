@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.implementation.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/Color_8ED5F3" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_boy" />
+    <ImageView
+        android:id="@+id/rightcorner"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rightcorner" />
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="33dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/modal" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/starcoin" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="1"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:text="980"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+    <ImageView
+        android:id="@+id/boysmile"
+        android:layout_width="283dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/boysmile" />
+
+<!--//第一根分割线-->
+    <ImageView
+        android:id="@+id/split"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/splitline" />
+    <!--第一列图片-->
+
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/ball4"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ball"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/split" />
+
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/car3"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/car"
+
+        app:layout_constraintStart_toEndOf="@+id/ball4"
+        app:layout_constraintTop_toTopOf="@+id/ball4" />
+
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/duck3"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+
+        android:background="@drawable/duck"
+        app:layout_constraintStart_toEndOf="@+id/car3"
+        app:layout_constraintTop_toTopOf="@+id/car3"
+     />
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/dinosaur3"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+
+        android:background="@drawable/dinosaur"
+        app:layout_constraintStart_toEndOf="@+id/duck3"
+        app:layout_constraintTop_toTopOf="@+id/duck3"
+        />
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/potatochips3"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+
+        android:background="@drawable/potatochips"
+        app:layout_constraintStart_toEndOf="@+id/dinosaur3"
+        app:layout_constraintTop_toTopOf="@+id/dinosaur3"
+        />
+    <!--//第二根根分割线-->
+    <ImageView
+        android:id="@+id/split2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinosaur3"
+        app:srcCompat="@drawable/splitline" />
+    <!--第二列图片-->
+
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/beer"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/beer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/split2" />
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/slide"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/slide"
+
+        app:layout_constraintStart_toEndOf="@+id/beer"
+        app:layout_constraintTop_toTopOf="@+id/beer" />
+    <top.wang.hci2.view.ShopView
+        android:id="@+id/telephone"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/telephone"
+
+        app:layout_constraintStart_toEndOf="@+id/slide"
+        app:layout_constraintTop_toTopOf="@+id/slide" />
+    <!--<ImageView-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/beer"-->
+    <!--android:layout_width="220dp"-->
+    <!--android:layout_height="66dp"-->
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/split3"-->
+    <!--app:srcCompat="@drawable/beer" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/telephone"-->
+    <!--android:layout_width="380dp"-->
+    <!--android:layout_height="66dp"-->
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/split3"-->
+    <!--app:srcCompat="@drawable/telephone" />-->
+<!--<ImageView-->
+        <!--android:id="@+id/car"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintLeft_toRightOf="ball2"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/car" />-->
+    <!--<top.juusok.hci2.view.ShopView-->
+        <!--android:id="@+id/car3"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintLeft_toRightfOf="ball4"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/car" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/duck"-->
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/duck" />-->
+    <!--<top.juusok.hci2.view.ShopView-->
+        <!--android:id="@+id/duck3"-->
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/duck" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/dinosaur"-->
+        <!--android:layout_width="540dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/dinosaur" />-->
+
+    <!--<top.juusok.hci2.view.ShopView-->
+        <!--android:id="@+id/dinosaur3"-->
+        <!--android:layout_width="540dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/ball4"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/dinosaur" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/potatochips"-->
+        <!--android:layout_width="700dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--android:layout_marginTop="7dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/potatochips" />-->
+
+    <!--<top.juusok.hci2.view.ShopView-->
+        <!--android:id="@+id/potatochips3"-->
+        <!--android:layout_width="700dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--android:layout_marginTop="7dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split"-->
+        <!--app:srcCompat="@drawable/potatochips"-->
+        <!--tools:layout_editor_absoluteX="228dp" />-->
+    <!--第二列-->
+    <!--<ImageView-->
+        <!--android:id="@+id/split2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/potatochips"-->
+        <!--app:srcCompat="@drawable/splitline" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/ball"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split2"-->
+        <!--app:srcCompat="@drawable/ball" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/car2"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split2"-->
+        <!--app:srcCompat="@drawable/car" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/duck2"-->
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split2"-->
+        <!--app:srcCompat="@drawable/duck" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/dinosaur2"-->
+        <!--android:layout_width="540dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split2"-->
+        <!--app:srcCompat="@drawable/dinosaur" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/potatochips2"-->
+        <!--android:layout_width="700dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split2"-->
+        <!--app:srcCompat="@drawable/potatochips" />-->
+
+    <!--&lt;!&ndash;第三列&ndash;&gt;-->
+    <!--<ImageView-->
+        <!--android:id="@+id/split3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ball"-->
+        <!--app:srcCompat="@drawable/splitline" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/slide"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/split3"-->
+        <!--app:srcCompat="@drawable/slide" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/beer"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split3"-->
+        <!--app:srcCompat="@drawable/beer" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/telephone"-->
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="66dp"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@+id/split3"-->
+        <!--app:srcCompat="@drawable/telephone" />-->
+
+</android.support.constraint.ConstraintLayout>
